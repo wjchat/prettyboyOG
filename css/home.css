@@ -1,0 +1,39 @@
+.initialplay{
+	position: absolute;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	margin:auto;
+	text-align: center;
+	font-size: 100px;
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer;
+}
+
+.initialplay:hover{
+	color: rgba(0, 0, 0, 1);
+}
+
+.small{
+	display: none;
+}
+
+@media screen and (max-width: 450px){
+	#thispage{
+		border: 2px rgba(256, 256, 256, .9) solid;
+	}
+	.large{
+/*		display: none;
+		-webkit-appearence:block;*/
+	}
+	.small{
+		display: block;
+		webkit-appearence:none;
+	}
+
+
+}

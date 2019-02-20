@@ -1,0 +1,80 @@
+@media screen and (max-width: 450px) {
+	.largeview{
+		display: none;
+	}
+	
+	.smallview{
+		display: inline-block;
+/*		height: 100%;
+		width: 100%;*/
+	}
+	html{
+		font-size: 110%;
+	}
+
+	#ex{
+		display: block;
+		color: black;
+		font-size: 2rem;
+	}
+	.logosm{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		height: 2.6rem;
+		width: 11.1rem;
+		border: 2px black solid;
+		color: black;
+		cursor: default;
+		transition: all .06s linear 0s;
+	}
+
+
+	h1{
+		padding-top: .23rem;
+		padding-left: 1.2rem;
+		font-size: 1.7rem;
+		font-family: garamond;
+		letter-spacing: .8px;
+	}
+
+	.optionsm{
+		font-family: 'NowAltLight';
+		position: absolute;
+		display: inline-block;
+	/*	border: 1px rgba(0,0,0, .7) solid;*/
+		padding: .25rem .5rem;
+	}
+
+	.optionsm h2{
+		position: relative;
+		font-size: .8rem;
+	}
+
+	.aboutsm{
+		top: 25%;
+		left: 5%;
+	}
+
+	.workssm{
+		top: 25%;
+		right: 5%;
+	}
+
+	.contactsm{
+		bottom: 25%;
+		left: 5%;
+	}
+
+	.reelsm{
+		bottom: 25%;
+		right: 5%;
+	}
+
+	a{
+		color: rgba(0,0,0,.7);
+	}
+}

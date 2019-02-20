@@ -1,0 +1,45 @@
+body{
+	background: rgb(24,24,24);
+	color: rgba(256, 256, 256, .9);
+	font-family: 'NowAltRegular';
+}
+
+nav{
+	background: none;
+}
+
+.logo{
+	cursor:pointer;
+}
+
+.content{
+	position: relative;
+	text-align: center;
+	display: block;
+	top: 50%;
+	width: 87%;
+	margin-left: auto;
+	margin-right: auto;
+/*	border: rgba(256, 256, 256, .7) 1px solid;*/
+	color: rgba(256, 256, 256, .7);
+	font-family: 'NowAltRegular';
+	padding: 10px 20px;
+	font-size: 2rem;
+	color: rgba(256, 256, 256, .9);
+	
+}
+
+
+.logo:hover{
+		color: rgba(256, 256, 256, .9);
+		border: 2px rgba(256, 256, 256, .9) solid;
+		transition: all .1s linear 0s;
+	}
+
+@media screen and (max-width:450px){
+	.content {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+}

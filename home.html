@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">.
+	<title>Our Reel</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/videopage.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/home.css">
+
+<!-- gimme FONTS -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now-alt" type="text/css"/>
+<!-- gimme JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<script src = 'js/volume.js'></script>
+
+</head>
+<body onload = 'SliderAdjust()'>
+
+	<div class = 'video-container'>
+		<div class = 'gradient'>
+		</div>
+	
+		<div class = 'blanket'></div>
+		<nav>
+			
+			<div class = 'topnav'>
+				<a href="home.html">
+				<div class = 'logo' id = 'thispage'>
+					<h1 >Pretty Boy</h1>
+				</div>
+				</a>
+			</div>
+			
+			<div class = 'down'></div>
+			<div class = 'bottomnav'>
+				<ul class = 'dropdown default fadein fadeoutstuff'>
+					<li class = 'navline'>|</li>
+					<li class = 'navoption'><a href = 'contact.html'>Contact</a></li>
+					<li class = 'navline'>|</li>
+					<li class = 'navoption'><a href = 'works.html'>Works</a></li>
+					<li class = 'navline'>|</li>
+					<li class = 'navoption'><a href = 'about.html'>About</a></li>
+				</ul>
+			</div>
+
+
+		</nav>
+
+		<video id = 'Reel' class = 'large' loop>
+		  <source src="images/Reel1.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+
+		<video id = 'Reel' class = 'small' loop controls = 'true'>
+		  <source src="images/Reel1.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+		<!-- <div class = 'initialplay'>►</div> -->
+		<div class = 'controls'>
+			<div class = 'progress'></div>
+			<div class = 'progress-filled'></div>
+			<div class = 'playpause fadeoutstuff'>►</div>
+			<div class = 'volumeslider fadeoutstuff'>
+				<img class = 'volumeicon' src="images/speaker.png" alt="volume">
+				
+				<div class = 'slidecontain'>
+					<input id = 'volumeslider' type="range" min="1" max="100" value="50" class="slider" onmousemove = 'SliderAdjust()'>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src = 'js/videocontrols.js'></script>
+	<script src = 'js/nav.js'></script>
+	
+</body>
+</html>

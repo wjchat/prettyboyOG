@@ -1,0 +1,115 @@
+html{
+  z-index: -3;
+}
+body{
+  z-index: -2;
+}
+.video-container {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  background-color:rgb(24,24,24);
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  /*min-width: 100%; */
+/*  min-width: 100%; 
+  min-height: 100%; */
+  width: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+/*  width: auto;*/
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.controls{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, .2));
+}
+
+
+.playpause{
+	/*border: red 1px solid;*/
+	position: relative;
+  display: inline-block;
+	/*bottom: ;*/
+	left: 4%;
+	color: white;
+	cursor: pointer;
+  height: 20px;
+  width: 30px;
+}
+
+.volumeslider{
+  height: 20px;
+  text-align: left;
+  position: absolute;
+  display: inline-block;
+  right: 3%;
+  top: 1.5px;
+
+  /*padding:20px;*/
+}
+
+.slidecontain{
+  padding: 20px;
+  position: absolute;
+  bottom: 60px; 
+  left: -84px; 
+  transform:rotate(270deg);
+  display: none;
+}
+
+.slider{
+  -webkit-appearance: none;
+  /*width: 100%;*/
+  height: 1px;
+/*  width: 5px;*/
+  border-radius: 5px;   
+  background: white;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  /*transition: opacity .2s;*/
+
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%; 
+    background: rgba(256, 256, 256, 1);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.fadecursor{
+  cursor: none;
+  transition: cursor .4s linear 0s;
+}
+
+
+

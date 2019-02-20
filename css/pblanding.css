@@ -1,0 +1,266 @@
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+.landing{
+	z-index: 100;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	top: 0%;
+}
+
+
+.viewable{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.container{
+	position: relative;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	font-size: 70px;
+	font-family: 'garamond';
+	cursor: default;
+	/*border: 1px solid red;*/
+	left: -190px;
+	overflow-x:visible;
+	letter-spacing: 2px;
+}
+
+.cutoff{
+	position: absolute;
+	height: 100px;
+	width: 90%;
+	top: 44%;
+	/*border: green 1px solid;*/
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.window{
+	position: relative;
+	box-shadow:inset 0px 3px 10px 0px rgba(0, 0, 0, 0);
+	/*border: 1px solid black;*/
+	height: 100px;
+	width: 410px;
+	z-index: 300;
+	transition: all .2s linear 0s;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav{
+	position: relative;
+	/*border: 1px red solid;*/
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 306px;
+	height: 20px;
+	background-color: transparent;
+	width: 30%;
+}
+
+.pretty{
+	position: relative;
+	left: 20%;
+	text-align: right;
+	padding-top: 10px;
+	background-color: white;
+	z-index: 1000;
+	height: 80px;
+	width: 400px;
+	/*border: 1px red solid;*/
+}
+
+.words{
+	/*border: 1px orange solid;*/
+	position: absolute;
+	left: 200px;
+	bottom: 12.5px;
+	line-height: 80px;
+	padding-left: 0;
+	transition: all .2s linear 0s;
+
+}
+
+.words li{
+	transition: all .2s linear 0s;
+}
+
+
+
+.glyph{
+	/*border: 1px black solid;*/
+	font-family: 'NowAltThin';
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	width: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 5rem;
+	text-align: center;
+	transform: rotate(-90deg);
+	color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+/*transition classes*/
+
+.glyphchange{
+	color: rgba(0, 0, 0, .2);
+	transition: color .2s linear 0s;
+}
+
+.glyphchange2{
+	color: rgba(0, 0, 0, .8);
+	font-size: 7rem;
+	transition: all .2s linear 0s;
+}
+
+.slightleft{
+	padding-left: 5px;
+	transition: all .2s linear 0s;
+}
+
+.moved{
+	bottom: -2787.5px;
+	transition: all 2.5s cubic-bezier(1, 0.0, 0.1, 1) 0s;
+}
+
+.moveright{
+	left: -54%;
+	transition: all .8s cubic-bezier(0.6, 0.0, .1, 1) .2s;
+}
+
+.movein{
+	left: 45px;
+	transition: left .5s cubic-bezier(0.4, 0.0, 0.2, 1) .2s;
+
+}
+
+.fadein{
+	color: rgba(0, 0, 0, .6);
+	transition: all .3s linear 0s;
+}
+
+.box-in{
+	box-shadow:inset 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+	transition: all .2s linear 0s;
+}
+
+.shrink{
+	font-size: 65px;
+	transition: all .2s linear 0s;
+}
+
+
+.enlarge-box{
+	height: 100px;
+}
+
+.bolden{
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+	transition: all .3s linear 0s;
+	border-left: none;
+}
+
+
+.line{
+	position: absolute;
+	background-color: rgba(256, 256, 256, 0);
+	height: 5px;
+	width: 5px;
+}
+
+.bottomline{
+	right: 0;
+	bottom: 0;
+}
+
+.rightline{
+	top: 0;
+	right: 0px;
+}
+
+.topline{
+	top: 0;
+	left: 0;
+}
+
+.leftline{
+	bottom: 0;
+	left: 0;
+}
+
+.bottommove{
+	width: 100%;
+	transition: .05s width cubic-bezier(0.4, 0.0, 1, 1) 0s;
+}
+
+.rightmove{
+	height: 100%;
+	transition: .05s all linear 0s;
+}
+
+.topmove{
+	width: 100%;
+	transition: .2s all linear 0s;
+}
+
+.leftmove{
+	height: 100%;
+	transition: .2s all cubic-bezier(0.0, 0.0, 0.2, 1) 0s;
+}
+
+.landingmove{
+	top: -100%;
+	transition: all .6s cubic-bezier(0.0, 0.0, 0.2, 1) 0s;
+}
+
+/*animations*/
+
+@keyframes blur{
+	0%{
+		color: black;
+	  	text-shadow: 0 0 0 rgba(255,255,255,0);
+	}
+
+	50%{
+		color: transparent;
+	  	text-shadow: 0 0 2px rgba(0,0,0, .5);
+	}
+
+	100%{
+		color: black;
+  		text-shadow: 0 0 5px rgba(0,0,0,0);
+	}
+}
+
+.blur{
+	animation-name: blur;
+    animation-duration:2s;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+/*handles small viewport*/
+/*.smallview{
+	display: none;
+}
+*/
+
